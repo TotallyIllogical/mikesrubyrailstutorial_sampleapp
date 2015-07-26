@@ -1,0 +1,71 @@
+/* My varibles */
+$linkcolor: Crimson 
+$linkhovercolor: darken($linkcolor, 15%)
+$navbarbg: black
+$navbarlinkcolor: white
+$navbarlinkhovercolor: lighten($navbarbg, 20%)
+$footerbg: lightgray
+
+/* My styling */
+body 
+	margin: 0
+	padding: 0
+	font-size: 20px
+	a
+		color: $linkcolor
+		font-weight: bold
+		text-decoration: none
+		&:hover
+			color: $linkhovercolor
+			text-decoration: underline
+	
+
+header
+	background-color: $navbarbg
+	color: white
+	overflow:auto 
+	h1
+		padding: 15px 50px 15px 20px
+		margin: 0
+		font-size: 34px
+		display: inline
+	a 
+		color: $navbarlinkcolor
+		&:hover
+			color: $navbarlinkcolor
+			text-decoration: none
+	ul
+		margin: 0
+		padding: 0
+		display: inline
+
+	li
+		font-size: 28px
+		padding: 15px 20px
+		display: inline-block
+		&:hover
+			background-color: $navbarlinkhovercolor 
+
+
+.content
+	padding: 15px 20px 75px
+	p
+		padding-bottom: 30px
+		line-height: 1.5em
+	.button
+		padding: 15px
+		font-size: 24px
+		background-color: $linkcolor
+		border: 1px solid darken($linkcolor, 5%)
+		color: $navbarlinkcolor
+		text-decoration: none
+		&:hover 
+			background-color: $linkhovercolor
+			border: 1px solid darken($linkhovercolor, 5%)
+
+footer
+	padding: 15px 20px
+	// background-color: $footerbg
+	height: 100%
+	img.footer-img
+		max-height: 50px
